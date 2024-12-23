@@ -10,7 +10,7 @@ class scoreboard;
         mon2scb.get(trans);
         trans.display("scoreboard signals");
         if
-          ((trans.a^trans.b^trans.c == trans.sum)&&((trans.a& trans.b)|(trans.c& trans.b)|(trans.a& trans.c)))
+          ((trans.a^trans.b^trans.c == trans.sum)&&((trans.a& trans.b)|(trans.c& trans.b)|(trans.a& trans.c) == trans.carry))
         $display("pass");
         else
          $display("fail");
